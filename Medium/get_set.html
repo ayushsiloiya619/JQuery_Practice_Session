@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML:" + $("#test").html());
+  });
+  $("#btn-0").click(function(){
+    alert("Value: " + $("#testone").val());
+  });
+  $("#btn-1").click(function(){
+    alert("SEE THE URL HERE: " +$("#w3s").attr("href"));
+  });
+});
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("#test1").text("Hello Ayush!");
+  });
+  $("#btn5").click(function(){
+    $("#test2").html("<b>Hello Ayush!</b>");
+  });
+  $("#btn6").click(function(){
+    $("#test3").val("Sheep");
+  });
+});
+</script>
+</head>
+<body>
+<!--Get the value-->
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+<button id="btn1">Get Text</button>
+<button id="btn2">Get HTML</button>
+<p>Name: <input type="text" id="testone" value="Ayush Siloiya"></p>
+<button id="btn-0">Show Value</button>
+<p><a href="https://www.google.co.in/" id="w3s">Google</a></p>
+<button id="btn-1">Show Href Value</button>
+
+<!--Set the Value--->
+<p id="test1">This is a testing.</p>
+<p id="test2">This is another testing.</p>
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+<button id="btn4">Set Text</button>
+<button id="btn5">Set HTML</button>
+<button id="btn6">Set Value</button>
+
+</body>
+</html>
