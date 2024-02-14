@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+//Remove 
+$(document).ready(function(){
+    $("#btn9").click(function(){
+        $("#div1").remove();
+    });
+});
+
+//Creating for append
+$(document).ready(function(){
+    $("#btn7").click(function(){
+        $("#ap1").append("Piramid is beautiful.");
+    });
+    $("#btn8").click(function(){
+        $("ol").append("<li>Siloiya</li>");
+    });
+});
+
+ //Creating for the GET   
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML:" + $("#test").html());
+  });
+  $("#btn-0").click(function(){
+    alert("Value: " + $("#testone").val());
+  });
+  $("#btn-1").click(function(){
+    alert("SEE THE URL HERE: " +$("#w3s").attr("href"));
+  });
+});
+
+//Creating for the SET  
+$(document).ready(function(){
+  $("#btn4").click(function(){
+    $("#test1").text("Hello Ayush!");
+  });
+  $("#btn5").click(function(){
+    $("#test2").html("<b>Hello Ayush!</b>");
+  });
+  $("#btn6").click(function(){
+    $("#test3").val("Sheep");
+  });
+});
+</script>
+<style>
+  .blue{
+    color: red;
+    font-size: 20px;
+  }
+  .important{
+    font-size: 30px;
+    color: aqua;
+  }
+</style>
+</head>
+<body>
+<!--Get the value-->
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+<button id="btn1">Get Text</button>
+<button id="btn2">Get HTML</button>
+<p>Name: <input type="text" id="testone" value="Ayush Siloiya"></p>
+<button id="btn-0">Show Value</button>
+<p><a href="https://www.google.co.in/" id="w3s">Google</a></p>
+<button id="btn-1">Show Href Value</button>
+
+<!--Set the Value--->
+<p id="test1">This is a testing.</p>
+<p id="test2">This is another testing.</p>
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+<button id="btn4">Set Text</button>
+<button id="btn5">Set HTML</button>
+<button id="btn6">Set Value</button>
+
+
+<!---Appending the elements-->
+<p id="ap1">This is a piramid.</p>
+<ol>
+  <li>Ayush</li>
+  <li>Ayush</li>
+  <li>Ayush</li>
+</ol>
+<button id="btn7">Append text</button>
+<button id="btn8">Append list items</button>
+
+<!--Trying the remove-->
+<div id="div1" style="height:100px;width:200px;border:2px solid black;background-color:yellow;margin-top: 20px;">
+<button id="btn9">Remove</button>
+
+
+</body>
+</html>
